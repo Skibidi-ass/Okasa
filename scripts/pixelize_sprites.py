@@ -26,6 +26,9 @@ BASE_SIZES = [24, 32, 48]
 UPSCALES = [3]
 PALETTE_COLORS = 10
 
+# GIF frame duration (milliseconds) used for preview GIFs
+FRAME_DURATION_MS = 80
+
 # custom Okasa palette (10 colors). Set USE_CUSTOM_PALETTE to True to enforce this palette.
 USE_CUSTOM_PALETTE = True
 CUSTOM_PALETTE = [
@@ -144,7 +147,7 @@ for anim, entries in frames.items():
         gif_frames = [Image.open(p).convert('RGBA') for p in pixel_frames]
         if gif_frames:
             gif_path = OUT_DIR / f'{anim}_{base}.gif'
-            gif_frames[0].save(gif_path, save_all=True, append_images=gif_frames[1:], duration=120, loop=0, disposal=2)
+            gif_frames[0].save(gif_path, save_all=True, append_images=gif_frames[1:], duration=FRAME_DURATION_MS, loop=0, disposal=2)
             print('Wrote GIF preview', gif_path)
 
 print('Done pixelizing sprites.')
