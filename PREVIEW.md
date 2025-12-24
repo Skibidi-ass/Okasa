@@ -36,6 +36,22 @@ To compare a tighter 8-color palette for better contrast at small sizes, see the
 
 ---
 
+## Side-by-side A/B (10-color vs 8-color)
+
+- **Jump (24px A/B)**
+
+  ![Jump A/B](assets/spritesheets/pixel/compare_ab/jump_24_ab.gif)
+
+- **Kneel (24px A/B)**
+
+  ![Kneel A/B](assets/spritesheets/pixel/compare_ab/kneel_24_ab.gif)
+
+- **Wink (24px A/B)**
+
+  ![Wink A/B](assets/spritesheets/pixel/compare_ab/wink_24_ab.gif)
+
+---
+
 ## Files generated
 
 - Pixel frames: `assets/sprites/pixel/<animation>/` (24/32/48 base sizes, upscaled x3 variants)
