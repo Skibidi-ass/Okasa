@@ -18,6 +18,24 @@ This preview shows the generated pixel-art sprite sheets and animated GIFs for A
 
 ---
 
+## 8-color palette comparison
+
+To compare a tighter 8-color palette for better contrast at small sizes, see the 8-color previews below (generated alongside the main pipeline):
+
+- **Jump (24px, 8-color)**
+
+  ![Jump 8-color 24px](assets/spritesheets/pixel/compare_8color/jump_24_8c.gif)
+
+- **Kneel (24px, 8-color)**
+
+  ![Kneel 8-color 24px](assets/spritesheets/pixel/compare_8color/kneel_24_8c.gif)
+
+- **Wink (24px, 8-color)**
+
+  ![Wink 8-color 24px](assets/spritesheets/pixel/compare_8color/wink_24_8c.gif)
+
+---
+
 ## Files generated
 
 - Pixel frames: `assets/sprites/pixel/<animation>/` (24/32/48 base sizes, upscaled x3 variants)
