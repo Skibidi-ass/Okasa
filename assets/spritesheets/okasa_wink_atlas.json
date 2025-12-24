@@ -1,0 +1,22 @@
+{
+  "frames": {
+    "okasa_wink_0": {
+      "x": 0,
+      "y": 0,
+      "w": 256,
+      "h": 256
+    },
+    "okasa_wink_1": {
+      "x": 256,
+      "y": 0,
+      "w": 256,
+      "h": 256
+    }
+  },
+  "meta": {
+    "sheet": "okasa_wink_sheet.png",
+    "frame_w": 256,
+    "frame_h": 256,
+    "frame_count": 2
+  }
+}

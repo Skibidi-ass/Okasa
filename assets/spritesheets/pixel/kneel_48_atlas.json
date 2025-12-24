@@ -1,0 +1,28 @@
+{
+  "frames": {
+    "kneel_0": {
+      "x": 0,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "kneel_1": {
+      "x": 48,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "kneel_2": {
+      "x": 96,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    }
+  },
+  "meta": {
+    "sheet": "kneel_48_sheet.png",
+    "frame_w": 48,
+    "frame_h": 48,
+    "frame_count": 3
+  }
+}

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 600 800">
+  <defs>
+    <linearGradient id="hairGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1E1B6B"/>
+      <stop offset="100%" stop-color="#2EC4B6"/>
+    </linearGradient>
+    <linearGradient id="scarfGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#A0E7E5" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#2EC4B6" stop-opacity="0.25"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- background circle -->
+  <rect width="100%" height="100%" fill="#0F172A" />
+  <g transform="translate(100,60)">
+    <!-- body base -->
+    <g id="body" transform="translate(200,240)">
+      <ellipse cx="0" cy="220" rx="110" ry="40" fill="#0F172A" opacity="0.95" />
+      <!-- kimono jacket -->
+      <path d="M-90,0 Q-120,70 -90,160 L90,160 Q120,70 90,0 Z" fill="#0F172A" stroke="#2C3440" stroke-width="3" />
+
+      <!-- sash / bandolier -->
+      <rect x="-110" y="40" width="220" height="24" rx="8" fill="#1E1B6B" transform="rotate(-12)" />
+      <g transform="translate(-60,44)">
+        <circle cx="140" cy="8" r="10" fill="#FF6B6B" />
+      </g>
+
+      <!-- wrapped boots (stylized) -->
+      <rect x="-60" y="160" width="40" height="60" rx="8" fill="#0F172A" />
+      <rect x="20" y="160" width="40" height="60" rx="8" fill="#0F172A" />
+
+    </g>
+
+    <!-- head + hair (layered, more detail) -->
+    <g id="head" transform="translate(200,120)">
+      <!-- scarf / tapestry (with runes) -->
+      <g id="scarf">
+        <path d="M-160,20 Q-120,-40 -40,-20 Q20,-10 60,-40 Q90,-60 150,-30" fill="url(#scarfGrad)" opacity="0.95" filter="url(#softGlow)" />
+        <!-- subtle runes along scarf -->
+        <g id="scarf-runes" fill="none" stroke="#A0E7E5" stroke-width="1.2" stroke-opacity="0.9" filter="url(#softGlow)">
+          <path d="M-140,6 q18 -8 34 -2" />
+          <path d="M-92,2 q12 -6 26 -1" />
+          <path d="M-10,-12 q10 -4 20 2" />
+        </g>
+      </g>
+
+      <!-- hair back -->
+      <g id="hair-back">
+        <path d="M-80,-20 C-110,30 -50,120 0,140 C50,120 110,30 80,-20 C40,-50 -40,-50 -80,-20 Z" fill="url(#hairGrad)"/>
+        <!-- flow detail -->
+        <path d="M-60,18 C-38,48 -24,86 4,108" fill="none" stroke="#2EC4B6" stroke-opacity="0.18" stroke-width="3"/>
+      </g>
+
+      <!-- hair front / bangs (overlay) -->
+      <g id="hair-front">
+        <path d="M-52,-18 C-46,-8 -10,6 -6,34 C-4,52 8,64 18,72 C26,66 32,44 40,20 C46,6 54,-6 32,-20 C12,-30 -6,-22 -30,-18 Z" fill="url(#hairGrad)"/>
+        <!-- crescent tuft -->
+        <path d="M56,-34 C62,-44 82,-44 90,-34 C82,-36 64,-22 56,-14 Z" fill="#1E1B6B"/>
+        <path d="M58,-30 C62,-36 78,-36 84,-30 C76,-32 64,-22 58,-18 Z" fill="#2EC4B6" opacity="0.95"/>
+      </g>
+
+      <!-- face (base + subtle shading) -->
+      <g id="face">
+        <ellipse cx="0" cy="20" rx="56" ry="72" fill="#FFEFD5" stroke="#e9c8a8" stroke-width="1"/>
+        <!-- blush -->
+        <ellipse cx="-18" cy="42" rx="10" ry="5" fill="#FF6B6B" opacity="0.06" />
+        <ellipse cx="18" cy="42" rx="10" ry="5" fill="#FF6B6B" opacity="0.06" />
+        <!-- nose (simple) -->
+        <path d="M0,30 q2,4 0,6" stroke="#d8a882" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      </g>
+
+      <!-- eyes (layered iris + pupil + highlights) -->
+      <g id="eyes" transform="translate(-22,14)">
+        <g id="left-eye">
+          <ellipse cx="0" cy="0" rx="14" ry="10" fill="#2C2C2C" />
+          <ellipse cx="0" cy="0" rx="12" ry="8" fill="#FFD166" />
+          <circle cx="2" cy="-2" r="3" fill="#6f4031" />
+          <circle cx="-3" cy="-1" r="2.2" fill="#fff" opacity="0.95" />
+        </g>
+      </g>
+      <g id="eyes-right" transform="translate(22,14)">
+        <g id="right-eye">
+          <ellipse cx="0" cy="0" rx="14" ry="10" fill="#2C2C2C" />
+          <ellipse cx="0" cy="0" rx="12" ry="8" fill="#FFD166" />
+          <circle cx="2" cy="-2" r="3" fill="#6f4031" />
+          <circle cx="-3" cy="-1" r="2.2" fill="#fff" opacity="0.95" />
+        </g>
+      </g>
+
+      <!-- mouth / expression -->
+      <path d="M-12,48 Q0,56 14,48" stroke="#6f4031" stroke-width="2" fill="none" stroke-linecap="round" />
+
+      <!-- thin circlet / forehead mark (hidden until active) -->
+      <g id="circlet" transform="translate(0,-6)" opacity="0.95">
+        <path d="M-28,-2 Q0,-12 28,-2" stroke="#FFD166" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-opacity="0.9"/>
+        <path id="forehead-rune" d="M0,-2 c2,6 -2,10 0,16" stroke="#A0E7E5" stroke-width="1.2" fill="none" opacity="0.12" filter="url(#softGlow)"/>
+      </g>
+
+      <!-- ear area / subtle crescent birthmark behind left ear -->
+      <g transform="translate(-64,22)">
+        <path d="M0,0 C10,-6 20,-6 28,0" fill="#A0E7E5" opacity="0.18" filter="url(#softGlow)" />
+      </g>
+
+      <!-- bandolier charms (more detail) -->
+      <g id="charms" transform="translate(-72,48)">
+        <g transform="translate(140,8)">
+          <circle cx="0" cy="0" r="10" fill="#FF6B6B" />
+          <path d="M-6,-2 Q0,6 6,-2 Q0,2 -6,-2 Z" fill="#fff" />
+        </g>
+        <g transform="translate(106,16)">
+          <rect x="-6" y="-8" width="12" height="16" rx="3" fill="#1E1B6B" stroke="#A0E7E5" stroke-width="1" opacity="0.9"/>
+        </g>
+        <g transform="translate(78,20)">
+          <circle r="5" fill="#A0E7E5" opacity="0.9"/>
+        </g>
+      </g>
+
+      <!-- fox charm (with small chain) -->
+      <g id="fox-charm" transform="translate(118,92)">
+        <path d="M-6,-20 q6 4 12 0" stroke="#C9A3A3" stroke-width="1" fill="none"/>
+        <circle cx="0" cy="0" r="12" fill="#FF6B6B" />
+        <path d="M-6,-2 Q0,6 6,-2 Q0,2 -6,-2 Z" fill="#fff" />
+      </g>
+
+    </g>
+
+    <!-- small shadow -->
+    <ellipse cx="200" cy="540" rx="140" ry="12" fill="#000" opacity="0.16" />
+  </g>
+</svg>

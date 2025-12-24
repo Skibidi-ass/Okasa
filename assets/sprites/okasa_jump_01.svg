@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="-128 -128 256 256">
+  <rect width="100%" height="100%" fill="#0F172A" rx="12" />
+  <g transform="translate(0,20)">
+    <!-- simplified mid-leap pose frame 1 -->
+    <g id="body">
+      <ellipse cx="0" cy="80" rx="60" ry="18" fill="#0F172A" opacity="0.9"/>
+      <path d="M-36,20 q20 0 36 24 q18 -24 36 -24 q18 0 36 8" fill="#0F172A" />
+    </g>
+    <!-- head/hair -->
+    <g transform="translate(0,-10)">
+      <path d="M-48,-44 C-56,-10 -18,40 0,56 C18,40 56,-10 48,-44 C22,-70 -22,-70 -48,-44 Z" fill="url(#hairGrad)" />
+      <ellipse cx="0" cy="0" rx="30" ry="36" fill="#FFEFD5" />
+      <ellipse cx="-8" cy="6" rx="6" ry="4" fill="#FFD166" />
+      <ellipse cx="8" cy="6" rx="6" ry="4" fill="#FFD166" />
+    </g>
+  </g>
+  <defs>
+    <linearGradient id="hairGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1E1B6B"/>
+      <stop offset="100%" stop-color="#2EC4B6"/>
+    </linearGradient>
+  </defs>
+</svg>

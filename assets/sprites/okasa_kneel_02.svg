@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="-128 -128 256 256">
+  <rect width="100%" height="100%" fill="#0F172A" rx="12" />
+  <g transform="translate(0,28)">
+    <!-- kneel frame 2: kneel down, hand near shrine, glow -->
+    <ellipse cx="0" cy="86" rx="60" ry="18" fill="#0F172A" opacity="0.9"/>
+    <g transform="translate(0,-28)">
+      <path d="M-40,4 q20 -6 40 14 q18 -20 36 -14" fill="#0F172A" />
+      <circle cx="36" cy="18" r="8" fill="#A0E7E5" opacity="0.9" filter="url(#softGlow)" />
+    </g>
+    <g transform="translate(0,-34)">
+      <path d="M-48,-52 C-56,-18 -18,32 0,48 C18,32 56,-18 48,-52 C22,-78 -22,-78 -48,-52 Z" fill="url(#hairGrad)" />
+      <ellipse cx="0" cy="-8" rx="30" ry="36" fill="#FFEFD5" />
+    </g>
+  </g>
+  <defs>
+    <linearGradient id="hairGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1E1B6B"/>
+      <stop offset="100%" stop-color="#2EC4B6"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+</svg>

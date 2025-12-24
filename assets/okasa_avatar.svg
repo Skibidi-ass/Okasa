@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="-128 -160 256 256">
+  <defs>
+    <linearGradient id="hairGradA" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1E1B6B"/>
+      <stop offset="100%" stop-color="#2EC4B6"/>
+    </linearGradient>
+    <filter id="softGlowA" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#0F172A" rx="20" />
+
+  <g transform="translate(0,20)">
+    <!-- hair back -->
+    <path d="M-72,-40 C-92,6 -40,90 0,110 C40,90 92,6 72,-40 C36,-78 -36,-78 -72,-40 Z" fill="url(#hairGradA)" />
+
+    <!-- hair front / bangs -->
+    <path d="M-46,-36 C-38,-18 -10,0 -6,26 C-4,40 6,50 16,56 C24,50 30,34 36,18 C40,8 46,-2 26,-20 C8,-34 -6,-28 -30,-20 Z" fill="url(#hairGradA)" />
+
+    <!-- face -->
+    <ellipse cx="0" cy="30" rx="46" ry="58" fill="#FFEFD5" stroke="#e9c8a8" stroke-width="1"/>
+    <!-- eyes -->
+    <g transform="translate(-18,26)">
+      <ellipse cx="0" cy="0" rx="10" ry="7" fill="#FFD166" />
+      <circle cx="-2" cy="-1" r="1.8" fill="#fff" opacity="0.95" />
+    </g>
+    <g transform="translate(18,26)">
+      <ellipse cx="0" cy="0" rx="10" ry="7" fill="#FFD166" />
+      <circle cx="-2" cy="-1" r="1.8" fill="#fff" opacity="0.95" />
+    </g>
+
+    <!-- small circlet -->
+    <path d="M-26,2 Q0,-8 26,2" stroke="#FFD166" stroke-width="1.4" fill="none" stroke-opacity="0.95" />
+
+    <!-- fox charm near shoulder -->
+    <g transform="translate(46,80)">
+      <circle r="6" fill="#FF6B6B"/>
+      <path d="M-3,-1 Q0,4 3,-1 Q0,1 -3,-1 Z" fill="#fff" />
+    </g>
+
+  </g>
+</svg>
