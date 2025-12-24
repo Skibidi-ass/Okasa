@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="hairBack" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1E1B6B"/>
+      <stop offset="100%" stop-color="#2EC4B6"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#0F172A" />
+  <g transform="translate(80,40)">
+    <!-- back silhouette -->
+    <path d="M120,40 C80,38 58,76 54,120 C48,180 40,260 116,296 C192,260 184,180 178,120 C174,76 152,38 120,40 Z" fill="#0F172A" />
+
+    <!-- flowing hair back (layered + highlights) -->
+    <g id="hair-back-group">
+      <path d="M80,56 C48,78 44,136 64,188 C94,260 146,288 196,200 C184,148 160,96 136,72 C118,56 100,48 80,56 Z" fill="url(#hairBack)" />
+      <path d="M96,88 C88,132 104,176 130,206 C154,232 182,246 206,206" fill="none" stroke="#2EC4B6" stroke-width="3" stroke-opacity="0.16"/>
+    </g>
+
+    <!-- sash / bandolier from back (runes + charms) -->
+    <g id="sash-back">
+      <path d="M10,160 Q70,140 130,116 Q186,94 260,120 Q260,160 210,180 Q156,196 80,190 Q46,186 10,160 Z" fill="#1E1B6B" />
+      <g transform="translate(60,120)" opacity="0.9">
+        <path d="M10,6 q30 -12 52 -6" stroke="#A0E7E5" stroke-width="1.2" stroke-opacity="0.9" fill="none" filter="url(#softGlow)"/>
+        <circle cx="160" cy="12" r="6" fill="#FF6B6B" />
+      </g>
+    </g>
+
+    <!-- fox charm at back (detailed) -->
+    <g transform="translate(210,130)" id="fox-back">
+      <path d="M-6,-20 q6 4 12 0" stroke="#C9A3A3" stroke-width="1" fill="none"/>
+      <circle r="8" fill="#FF6B6B"/>
+      <path d="M-4,-1 Q0,6 4,-1 Q0,2 -4,-1 Z" fill="#fff" />
+    </g>
+  </g>
+</svg>

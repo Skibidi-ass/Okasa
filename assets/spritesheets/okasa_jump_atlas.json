@@ -1,0 +1,34 @@
+{
+  "frames": {
+    "okasa_jump_0": {
+      "x": 0,
+      "y": 0,
+      "w": 256,
+      "h": 256
+    },
+    "okasa_jump_1": {
+      "x": 256,
+      "y": 0,
+      "w": 256,
+      "h": 256
+    },
+    "okasa_jump_2": {
+      "x": 512,
+      "y": 0,
+      "w": 256,
+      "h": 256
+    },
+    "okasa_jump_3": {
+      "x": 768,
+      "y": 0,
+      "w": 256,
+      "h": 256
+    }
+  },
+  "meta": {
+    "sheet": "okasa_jump_sheet.png",
+    "frame_w": 256,
+    "frame_h": 256,
+    "frame_count": 4
+  }
+}

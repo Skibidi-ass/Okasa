@@ -1,0 +1,28 @@
+{
+  "frames": {
+    "kneel_0": {
+      "x": 0,
+      "y": 0,
+      "w": 24,
+      "h": 24
+    },
+    "kneel_1": {
+      "x": 24,
+      "y": 0,
+      "w": 24,
+      "h": 24
+    },
+    "kneel_2": {
+      "x": 48,
+      "y": 0,
+      "w": 24,
+      "h": 24
+    }
+  },
+  "meta": {
+    "sheet": "kneel_24_8c_sheet.png",
+    "frame_w": 24,
+    "frame_h": 24,
+    "frame_count": 3
+  }
+}

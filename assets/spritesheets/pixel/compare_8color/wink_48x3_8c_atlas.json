@@ -1,0 +1,22 @@
+{
+  "frames": {
+    "wink_0": {
+      "x": 0,
+      "y": 0,
+      "w": 144,
+      "h": 144
+    },
+    "wink_1": {
+      "x": 144,
+      "y": 0,
+      "w": 144,
+      "h": 144
+    }
+  },
+  "meta": {
+    "sheet": "wink_48x3_8c_sheet.png",
+    "frame_w": 144,
+    "frame_h": 144,
+    "frame_count": 2
+  }
+}
